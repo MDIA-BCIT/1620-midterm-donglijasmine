@@ -13,3 +13,23 @@ CHALLENGE
 - If the password is less than 5 characters, log out "Your password is too short!".
 */
 
+
+
+
+
+function passwordCheck (password, userInput){
+    if (userInput === password) {
+        return "Access Granted!";
+    } else if (userInput === "forgot") {
+        return "Here is a hint";
+    } else if (userInput === "reset") {
+        return "Let's reset your account";
+    } else 
+        return "Access Denied!";
+}
+
+
+passwordCheck ("password","dongli");
+passwordCheck ("password", "password");
+passwordCheck ("password","forgot");
+passwordCheck ("password","reset");
