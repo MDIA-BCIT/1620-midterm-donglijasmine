@@ -15,21 +15,24 @@ CHALLENGE
 
 
 
+let password = "bingo";
 
 
 function passwordCheck (password, userInput){
     if (userInput === password) {
-        return "Access Granted!";
+        console.log("Access Granted!");
     } else if (userInput === "forgot") {
-        return "Here is a hint";
+        console.log("Here is a hint");
     } else if (userInput === "reset") {
-        return "Let's reset your account";
+        console.log("Let's reset your account");
     } else 
-        return "Access Denied!";
+        console.log("Access Denied!");
 }
 
 
-passwordCheck ("password","dongli");
+passwordCheck ("password","bingo");
 passwordCheck ("password", "password");
+passwordCheck ("password","star");
 passwordCheck ("password","forgot");
 passwordCheck ("password","reset");
+
